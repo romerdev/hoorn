@@ -2,10 +2,10 @@ import { ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const QuickAction = ({ action, children, color }) => {
   return (
-    <div className='bg-white text-black flex flex-col items-center translate-y-14 h-full'>
+    <div className='bg-white text-black flex flex-col items-center translate-y-14 h-full shadow-lg'>
       <div className='m-7 flex flex-col items-center h-full'>
         <p className='font-bold'>{action}</p>
-        <div className='mt-auto p'>{children}</div>
+        <div className='mt-auto pt-4'>{children}</div>
       </div>
       <div
         className={
