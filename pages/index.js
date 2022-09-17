@@ -11,15 +11,16 @@ import {
 export default function Home() {
   return (
     <Layout>
-      <span className='bg-orange bg-blue bg-orange bg-yellow bg-purple bg-green'></span>
+      <span className='bg-orange bg-blue bg-orange bg-yellow bg-purple bg-green bg-cyan'></span>
       <Hero />
+      <Search />
     </Layout>
   );
 }
 
 const Hero = () => {
   return (
-    <section className='text-center flex items-center flex-col bg-red text-white pt-32'>
+    <section className='text-center flex items-center flex-col bg-red text-white pt-36 mb-28'>
       <Logo className='scale-150' />
       <h1 className='text-5xl mt-4'>Welkom in Hoorn</h1>
       <p className='mt-20'>Waarmee kunnen wij u helpen?</p>
@@ -33,7 +34,7 @@ const Hero = () => {
           </QuickAction>
           <QuickAction
             action='Ik wil overlast of iets dat kapot is melden'
-            color='blue'
+            color='cyan'
           >
             <BellIcon className='h-7 w-7' />
           </QuickAction>
@@ -46,5 +47,26 @@ const Hero = () => {
         </nav>
       </div>
     </section>
+  );
+};
+
+const Search = () => {
+  return (
+    <div className='wrapper--small text-center'>
+      <p className='mb-4 font-bold max-w-sm mx-auto'>
+        Nog niet gevonden wat u zocht? Dan kunt u hieronder verder zoeken.
+      </p>
+      <form className='flex '>
+        <input
+          type='text'
+          placeholder='Vul hier uw zoekterm in'
+          name='search'
+          className='border-2 border-blue text-blue font-bold px-4 py-2 w-full'
+        />
+        <button type='submit' className='bg-blue text-white p-4 aspect-square'>
+          Zoek
+        </button>
+      </form>
+    </div>
   );
 };

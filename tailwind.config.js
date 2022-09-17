@@ -16,6 +16,7 @@ module.exports = {
       blue: "#266ea1",
       green: "#459828",
       orange: "#E18335",
+      cyan: "#087E8B",
     },
     fontFamily: {
       sans: ["Noto Sans", "sans-serif"],
