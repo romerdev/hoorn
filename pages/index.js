@@ -1,6 +1,6 @@
 import Layout from "../sections/Layout";
 import QuickAction from "../components/QuickAction";
-import Logo from "../public/logo-weapon.svg";
+import Logo from "../public/logo-hoorn.svg";
 import {
   CreditCardIcon,
   TruckIcon,
@@ -26,9 +26,11 @@ const Hero = () => {
     <section className='text-center flex items-center flex-col bg-blue text-white pt-36 mb-28'>
       <Logo className='scale-150' />
       <h1 className='text-5xl mt-4'>Welkom in Hoorn</h1>
-      <p className='mt-20'>Waarmee kunnen wij u helpen?</p>
+      <p className='mt-20 translate-y-6 font-bold tracking-wide'>
+        Waarmee kunnen wij u helpen?
+      </p>
       <div className='wrapper'>
-        <nav className='grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-7'>
+        <nav className='grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-6'>
           <QuickAction action='Ik wil een rijbewijs aanvragen' color='green'>
             <CreditCardIcon className='h-7 w-7' />
           </QuickAction>
@@ -66,7 +68,10 @@ const Search = () => {
           name='search'
           className='border-2 border-red text-red font-bold px-4 py-2 w-full'
         />
-        <button type='submit' className='bg-red text-white p-4 aspect-square'>
+        <button
+          type='submit'
+          className='bg-red text-white p-4 aspect-square font-bold hover:underline underline-offset-2'
+        >
           Zoek
         </button>
       </form>
@@ -94,7 +99,7 @@ const Highlight = () => {
             Hoorn neemt een ambitieuse sprong voorwaarts. De komende jaren gaat
             het stationsgebied en Pelmolenpad flink veranderen. Juist in dit
             gebied is er veel ruimte voor nieuwe ontwikkelingen. Nieuwe en
-            aantrekkelijke stedelijke woon-werkmilieus. Op steenworp afstand van
+            aantrekkelijke stedelijke woon-werkmilieus, op steenworp afstand van
             de prachtige historische binnenstad én het grootste stadsstrand van
             Nederland.
           </p>
@@ -103,14 +108,11 @@ const Highlight = () => {
               href='https://www.poortvanhoorn.nl/'
               target={"_blank"}
               rel={"noreferrer"}
-              className='bg-red font-bold text-white px-4 py-2'
+              className='button'
             >
               Lees meer
             </a>
-            <a
-              href='https://www.poortvanhoorn.nl/'
-              className='border-2 border-red text-red font-bold px-4 py-2 flex gap-x-2 items-center'
-            >
+            <a href='https://www.poortvanhoorn.nl/' className='button--outline'>
               Meer projecten
             </a>
           </div>

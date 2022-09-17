@@ -18,9 +18,34 @@ h6 {
 }
 
 .wrapper {
-  @apply max-w-6xl px-4 w-full mx-auto;
+  @apply max-w-6xl px-4 md:px-8 w-full mx-auto;
 }
 
 .wrapper--small {
-  @apply md:max-w-xl px-4 w-full mx-auto;
+  @apply md:max-w-xl px-4 md:px-8 w-full mx-auto;
+}
+
+.button,
+.button--red,
+.button--outline,
+.button--outline--red {
+  @apply border-2 bg-blue border-blue text-white font-bold px-4 py-2 flex items-center gap-x-2;
+}
+
+.button,
+.button--red {
+  @apply hover:underline underline-offset-2;
+}
+
+.button--outline,
+.button--outline--red {
+  @apply text-blue bg-white hover:text-white hover:bg-blue transition-colors;
+}
+
+.button--red {
+  @apply bg-red border-red;
+}
+
+.button--outline--red {
+  @apply text-red border-red hover:bg-red;
 }
