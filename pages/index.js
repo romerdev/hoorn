@@ -1,5 +1,6 @@
 import Layout from "../sections/Layout";
 import QuickAction from "../components/QuickAction";
+import Preview from "../components/Preview";
 import Logo from "../public/logo-hoorn.svg";
 import {
   CreditCardIcon,
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Search />
       <Highlight />
+      <News />
     </Layout>
   );
 }
@@ -93,10 +95,10 @@ const Highlight = () => {
             Maak plaats in de Poort van Hoorn
           </h2>
           <p className='mb-4 opacity-50 md:max-w-md font-bold'>
-            De toekomst van het stationsgebied van Hoorn.
+            De toekomst van het stationsgebied.
           </p>
           <p className='md:max-w-md'>
-            Hoorn neemt een ambitieuse sprong voorwaarts. De komende jaren gaat
+            Hoorn neemt een ambitieuze sprong voorwaarts. De komende jaren gaat
             het stationsgebied en Pelmolenpad flink veranderen. Juist in dit
             gebied is er veel ruimte voor nieuwe ontwikkelingen. Nieuwe en
             aantrekkelijke stedelijke woon-werkmilieus, op steenworp afstand van
@@ -118,6 +120,49 @@ const Highlight = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const News = () => {
+  return (
+    <div className='mb-32 wrapper'>
+      <h2 className='text-3xl md:text-4xl mb-12 text-center'>
+        Uitgelichte artikelen
+      </h2>
+      <div className='grid lg:grid-cols-3 gap-y-6 lg:gap-y-0 lg:gap-x-6'>
+        <Preview
+          title={"Eerste vernieuwingen centrumgebied Kersenboogerd"}
+          image={"betsy-perk.webp"}
+          type={"NIEUWS"}
+        >
+          Samen met de bewoners werken woningcorporatie Intermaris en de
+          gemeente aan het centrumgebied Kersenboogerd. De eerste vernieuwingen
+          in het centrumgebied worden zichtbaar met de start van de
+          werkzaamheden in Betsy Perk.
+        </Preview>
+        <Preview
+          title={"Gratis zonnebrand bij elf horecazaken"}
+          image={"zonnebrand.webp"}
+          type={"NIEUWS"}
+        >
+          De gemeente heeft pompjes met zonnebrand geplaatst bij 11
+          horecagelegenheden in de stad. Zo kunnen bezoekers en bewoners
+          zichzelf insmeren en beschermen tegen de zon.
+        </Preview>
+        <Preview
+          title={
+            "Spectaculaire demonstraties tijdens Nationale Hulpverlenersdag"
+          }
+          image={"hulpverlenersdag.webp"}
+          type={"EVENEMENT"}
+        >
+          Op zondag 25 september vindt de Nationale Hulpverlenersdag plaats in
+          Hoorn. Er zijn ruim 50 hulpverlenende organisaties aanwezig die
+          spectaculaire demonstraties geven.
+        </Preview>
+      </div>
+      <a className='button--red mx-auto mt-12'>Alle artikelen</a>
     </div>
   );
 };
