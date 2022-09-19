@@ -1,4 +1,4 @@
-# City of Hoorn remake
+# City of Hoorn website remake
 
 The original website is not that easy to use (and also not that pretty). So I choose to redesign and recode it.
 
