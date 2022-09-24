@@ -22,7 +22,12 @@ export default function Home() {
 
       <p className='my-5 text-center'>
         Dit concept is met ❤️ ontwikkeld door{" "}
-        <a href='https://nostal.dev/' target={"_blank"} className='link'>
+        <a
+          href='https://nostal.dev/'
+          rel='noreferrer'
+          target={"_blank"}
+          className='link'
+        >
           Romer Bormann
         </a>
         .
