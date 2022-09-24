@@ -9,7 +9,7 @@ const Header = () => {
           <div className='bg-red -mb-6 flex items-center shadow-lg'>
             <Logo />
           </div>
-          <div className='hidden sm:block my-auto ml-4 font-bold opacity-60'>
+          <div className='hidden sm:block my-auto ml-4 font-bold'>
             Gemeente Hoorn
           </div>
         </div>

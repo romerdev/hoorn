@@ -50,6 +50,14 @@ h6 {
   @apply text-red border-red hover:bg-red;
 }
 
+.button--full {
+  @apply w-full justify-center;
+}
+
+.link {
+  @apply underline underline-offset-2 hover:text-red;
+}
+
 input[type="search"] {
   -webkit-appearance: none;
 }
