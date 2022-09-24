@@ -25,13 +25,13 @@ export default function Home() {
 
 const Hero = () => {
   return (
-    <section className='text-center flex items-center flex-col bg-blue text-white pt-36 mb-28'>
-      <Logo className='scale-150' />
-      <h1 className='text-5xl mt-4'>Welkom in Hoorn</h1>
-      <p className='mt-20 translate-y-6 font-bold tracking-wide'>
+    <section className='text-center flex items-center flex-col bg-blue text-white pt-36 mb-28 hero-home'>
+      <Logo className='scale-150 z-10' />
+      <h1 className='text-5xl mt-4 z-10'>Welkom in Hoorn</h1>
+      <p className='mt-20 translate-y-6 font-bold tracking-wide z-10'>
         Waarmee kunnen wij u helpen?
       </p>
-      <div className='wrapper'>
+      <div className='wrapper z-10'>
         <nav className='grid grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-6'>
           <QuickAction action='Ik wil een rijbewijs aanvragen' color='green'>
             <CreditCardIcon className='h-7 w-7' />

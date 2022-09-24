@@ -6,10 +6,10 @@ import YouTube from "../public/icons/youtube.svg";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray pt-16'>
+    <footer className='bg-gray pt-10 md:pt-16'>
       <div className='wrapper grid lg:grid-cols-4 gap-12 lg:gap-24'>
         <div>
-          <Logo className='max-w-xs mx-auto' />
+          <Logo className='max-h-20 mx-auto' />
         </div>
         <div className='grid gap-12 md:grid-cols-3 lg:col-span-3 lg:gap-24 lg:grid-flow-dense'>
           <div className='grid grid-cols-2 gap-12 md:gap-24 md:col-span-2 lg:col-start-2'>
@@ -65,7 +65,7 @@ const Footer = () => {
       <div className='bg-red py-4 mt-16 text-white'>
         <div className='wrapper flex justify-center gap-x-12 lg:justify-between'>
           <a className='md:flex items-center gap-x-2 group'>
-            <Facebook className='h-4' />
+            <Facebook className='h-5' />
             <p className='hidden lg:block'>
               /{" "}
               <span className='group-hover:underline underline-offset-2'>
@@ -74,7 +74,7 @@ const Footer = () => {
             </p>
           </a>
           <a className='md:flex items-center gap-x-2 group'>
-            <Twitter className='h-4' />
+            <Twitter className='h-5' />
             <p className='hidden lg:block'>
               /{" "}
               <span className='group-hover:underline underline-offset-2'>
@@ -83,7 +83,7 @@ const Footer = () => {
             </p>
           </a>
           <a className='md:flex items-center gap-x-2 group'>
-            <Instagram className='h-4' />
+            <Instagram className='h-5' />
             <p className='hidden lg:block'>
               /{" "}
               <span className='group-hover:underline underline-offset-2'>
