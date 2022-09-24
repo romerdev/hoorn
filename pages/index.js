@@ -19,6 +19,14 @@ export default function Home() {
       <Search />
       <Highlight />
       <News />
+
+      <p className='my-5 text-center'>
+        Dit concept is met ❤️ ontwikkeld door{" "}
+        <a href='https://nostal.dev/' target={"_blank"} className='link'>
+          Romer Bormann
+        </a>
+        .
+      </p>
     </Layout>
   );
 }
@@ -72,6 +80,7 @@ const Search = () => {
         />
         <button
           type='submit'
+          disabled
           className='bg-red text-white p-4 aspect-square font-bold hover:underline underline-offset-2'
         >
           Zoek

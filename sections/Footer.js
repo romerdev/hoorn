@@ -40,29 +40,14 @@ const Footer = () => {
               </p>
             </div>
           </div>
-
           <div className='lg:col-span-1 lg:col-start-1'>
-            <a
-              href='https://www.poortvanhoorn.nl/'
-              target={"_blank"}
-              rel={"noreferrer"}
-              className='button button--full mb-2'
-            >
-              Bestuur bekijken
-            </a>
-            <a
-              href='https://www.poortvanhoorn.nl/'
-              target={"_blank"}
-              rel={"noreferrer"}
-              className='button--outline button--full'
-            >
-              Contact opnemen
-            </a>
+            <a className='button button--full mb-2'>Bestuur bekijken</a>
+            <a className='button--outline button--full'>Contact opnemen</a>
           </div>
         </div>
       </div>
 
-      <div className='bg-red py-4 mt-16 text-white'>
+      <div className='bg-red py-4 text-white mt-16'>
         <div className='wrapper flex justify-center gap-x-12 lg:justify-between'>
           <a className='md:flex items-center gap-x-2 group'>
             <Facebook className='h-5' />
